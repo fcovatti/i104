@@ -1060,7 +1060,7 @@ int main (int argc, char ** argv){
 			} else {
 				
 				// EMPTY ANALOG QUEUE	
-/*				Semaphore_wait(analog_queue.mutex);	
+				Semaphore_wait(analog_queue.mutex);	
 				if(analog_queue.size && ((get_time_ms()-analog_queue.time) > 4000)){//timeout to send analog buffered messages if not empty
 					if(send_analog_list_to_ihm(ihm_main_socket_send, &ihm_main_sock_addr,analog_queue.npontos, ihm_station, analog_queue.values, analog_queue.states, analog_queue.size) <0){
 						LOG_MESSAGE( "Error sending analog buffer to main IHM\n");
@@ -1090,7 +1090,7 @@ int main (int argc, char ** argv){
 					digital_queue.size=0;
 				}
 				Semaphore_post(digital_queue.mutex);	
-				*/
+				
 			}
 		}
 

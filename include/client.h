@@ -16,34 +16,19 @@
 
 #define CLIENT_CONFIG_FILE "client_config.txt"
 
-// OFFSET for the index in received reports
-#define INDEX_OFFSET 3
-
-// Size of analog data in RULE 2 Information reports
-#define RULE2_ANALOG_REPORT_SIZE 7
-
-// Size of digital data in RULE 2 Information reports 
-#define RULE2_DIGITAL_REPORT_SIZE 9
-
-// Size of analog data in RULE 0 Information reports
-#define RULE0_ANALOG_REPORT_SIZE 5
-
-// Size of digital data in RULE 0 Information reports 
-#define RULE0_DIGITAL_REPORT_SIZE 7
-
 #define MAX_STR_NAME 35
 
-// Max size of the dataset. IMPORTANT (bigger than 600 can cause code crash)
-#define DATASET_MAX_SIZE 500
+// Max size of the dataset.
+#define DATASET_MAX_SIZE 65536
 
 // MAx number of datasets allowed on the client
-#define DATASET_ANALOG_MAX_NUMBER 150
+#define DATASET_ANALOG_MAX_NUMBER 1
 
 // MAx number of datasets allowed on the client
-#define DATASET_DIGITAL_MAX_NUMBER 150
+#define DATASET_DIGITAL_MAX_NUMBER 1
 
 // MAx number of datasets allowed on the client
-#define DATASET_EVENTS_MAX_NUMBER 150
+#define DATASET_EVENTS_MAX_NUMBER 1
 
 // MAx number of commands allowed on the client(maximum number for sage is 20000)
 #define COMMANDS_MAX_NUMBER 20000
