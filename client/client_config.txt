@@ -1,0 +1,38 @@
+// Name or IP of the remote servers (tries to connect in ascending order), "no" disables it
+// Servers 1 to 4 Main Servers IPs
+// Servers 5 to 6 Backup Servers IPs
+// EX: srv1/srv2 IPs ems1, srv3/srv4 IPs ems2, srv5/srv6 IPs ems3, srv7/srv8 IPs ems3
+// Currently servers 5 to 8 don't work
+//SERVER_NAME_1="10.63.70.81";
+SERVER_NAME_1="127.0.0.1";
+SERVER_NAME_2="no";
+SERVER_NAME_3="no";
+SERVER_NAME_4="no";
+SERVER_NAME_5="no";
+SERVER_NAME_6="no";
+SERVER_NAME_7="no";
+SERVER_NAME_8="no";
+
+//Name or IP of the IHM (if no IHM configured use "no")
+//IHM_ADDRESS="10.63.77.174";
+//IHM_ADDRESS="127.0.0.1";
+IHM_ADDRESS="no";
+
+//Name or IP of the Backup client (if no backup configured use "no")
+//CLIENT_BKP_ADDRESS="10.63.77.174";
+CLIENT_BKP_ADDRESS="no";
+
+//Name or IP of the server allowed to check client Stats (if no stats configured use "no")
+CLIENT_STATS_ADDRESS="127.0.0.1";
+//CLIENT_STATS_ADDRESS="no";
+
+// Name of the configuration file
+CONFIG_FILE="sage_id.txt";
+
+// Time in seconds for buffering an event on a dataset before reporting to the client
+DATASET_ANALOG_BUFFER_INTERVAL="10";
+DATASET_DIGITAL_BUFFER_INTERVAL="1";
+DATASET_EVENTS_BUFFER_INTERVAL="1";
+
+// Time in seconds for Integrity check (configured on the remote server on initialization)
+DATASET_INTEGRITY_TIME="180";
